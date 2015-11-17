@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rrdtool create weather.rrd --step 600 \
+rrdtool create bandwidth.rrd --step 600 \
 DS:upstream:GAUGE:900:0:1000000000 \
 DS:downstream:GAUGE:900:0:1000000000 \
 RRA:AVERAGE:0.5:1:1440 \
