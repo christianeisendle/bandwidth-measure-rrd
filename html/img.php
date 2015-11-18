@@ -1,6 +1,15 @@
 <?php
+session_start();
 require_once("bandwidth_graph.class.php");
-$g = new BandwidthGraph("../bandwidth.rrd", $_GET["ds"], $_GET["desc"]);
+if (isset($_SESSION["rrddb"]))
+{
+   $rrddb = $_SESSION["rrddb"];
+}
+else
+{
+   $rrddb = "bandwidth";
+}
+$g = new BandwidthGraph("../$rrddb.rrd", $_GET["ds"], $_GET["desc"]);
 $ts = time();
 header("Content-Type: image/png");
 $g->setStart($_GET["from"]);

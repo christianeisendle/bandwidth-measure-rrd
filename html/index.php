@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION["rrddb"]=$_GET["rrddb"];
+?>
 <!DOCTYPE html>
 <html>
 <head>
