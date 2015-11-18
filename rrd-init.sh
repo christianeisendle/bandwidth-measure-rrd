@@ -1,6 +1,8 @@
 #!/bin/sh
-
-rrdtool create bandwidth.rrd --step 600 \
+if [ -z $BW_DATABASE_NAME ]; then
+  BW_DATABASE_NAME=bandwidth.rrd
+fi
+rrdtool create $BW_DATABASE_NAME --step 600 \
 DS:upstream:GAUGE:900:0:1000000000 \
 DS:downstream:GAUGE:900:0:1000000000 \
 RRA:AVERAGE:0.5:1:1440 \
