@@ -15,7 +15,9 @@
 <div class="heading"><h1>Bandwidth Measurement</h1></div>
 <div id="output_image_us"><img class="output_image" src="img.php?from=1day&ds=upstream&ul=10&desc=Upstream last 24h" /></div>
 <div id="output_image_ds"><img class="output_image" src="img.php?from=1day&ds=downstream&ul=50&desc=Downstream last 24h" /></div>
-<div id="output_image_us_1w"><img class="output_image" src="img.php?from=1week&ds=upstream&ul=10&desc=Upstream last 24h" /></div>
-<div id="output_image_ds_1w"><img class="output_image" src="img.php?from=1week&ds=downstream&ul=50&desc=Downstream last 24h" /></div>
+<div id="output_image_us_10d"><img class="output_image" src="img.php?from=10days&ds=upstream&ul=10&desc=Upstream last 10 days" /></div>
+<div id="output_image_ds_10d"><img class="output_image" src="img.php?from=10days&ds=downstream&ul=50&desc=Downstream last 10 days" /></div>
+<div id="output_image_us_1y"><img class="output_image" src="img.php?from=1month&ds=upstream&ul=10&desc=Upstream last year" /></div>
+<div id="output_image_ds_1y"><img class="output_image" src="img.php?from=1month&ds=downstream&ul=50&desc=Downstream last year" /></div>
 </body>
 </html>
