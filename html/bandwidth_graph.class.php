@@ -97,8 +97,10 @@ class BandwidthGraph {
       array(
       "VDEF:absmin=recent,MINIMUM",
       "VDEF:absmax=recent,MAXIMUM",
-      "DEF:min=$this->rrdFile:$this->ds:MIN",
-      "DEF:max=$this->rrdFile:$this->ds:MAX"
+      "DEF:min_raw=$this->rrdFile:$this->ds:MIN",
+      "CDEF:min=min_raw,$this->scaleDownValue,/",
+      "DEF:max_raw=$this->rrdFile:$this->ds:MAX",
+      "CDEF:max=max_raw,$this->scaleDownValue,/",
       );
       
       $this->specOptions =

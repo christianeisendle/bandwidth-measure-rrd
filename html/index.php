@@ -21,7 +21,7 @@ $_SESSION["rrddb"]=$_GET["rrddb"];
 <div id="output_image_ds"><img class="output_image" src="img.php?from=1day&ds=downstream&ul=50&desc=Downstream last 24h" /></div>
 <div id="output_image_us_10d"><img class="output_image" src="img.php?from=10days&ds=upstream&ul=10&desc=Upstream last 10 days" /></div>
 <div id="output_image_ds_10d"><img class="output_image" src="img.php?from=10days&ds=downstream&ul=50&desc=Downstream last 10 days" /></div>
-<div id="output_image_us_1y"><img class="output_image" src="img.php?from=1month&ds=upstream&ul=10&desc=Upstream last year" /></div>
-<div id="output_image_ds_1y"><img class="output_image" src="img.php?from=1month&ds=downstream&ul=50&desc=Downstream last year" /></div>
+<div id="output_image_us_1y"><img class="output_image" src="img.php?from=1year&ds=upstream&ul=10&desc=Upstream last year" /></div>
+<div id="output_image_ds_1y"><img class="output_image" src="img.php?from=1year&ds=downstream&ul=50&desc=Downstream last year" /></div>
 </body>
 </html>
