@@ -20,7 +20,14 @@ if (( strpos($_GET["from"], "day")  !== false ) ||
    $g->showAbsMin();
    $g->showAbsMax();
    $g->showRecent("#000000");
-   $g->showArea("#ff000032");
+   if ($_GET["ds"] == "upstream")
+   {
+      $g->showArea("#ff000032");
+   }
+   else
+   {
+      $g->showArea("#0000ff32");
+   }
 }
 else
 {
