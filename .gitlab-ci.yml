@@ -1,5 +1,5 @@
-build_job:
-  stage: build
-  script: "ls -la"
+test_job:
+  stage: test
+  script: "./test.sh"
 
 
