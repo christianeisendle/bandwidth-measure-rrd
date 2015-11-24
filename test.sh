@@ -1,7 +1,6 @@
 #!/bin/bash
 
-TEST=echo
-OUTPUT=`./capture_and_update_db_iperf3.sh`
+OUTPUT=`TEST=echo ./capture_and_update_db_iperf3.sh`
 UPLOAD=`echo $OUTPUT | awk -F: '{print $2}'`
 DOWNLOAD=`echo $OUTPUT | awk -F: '{print $3}'`
 if [ -z "$UPLOAD" ]; then
