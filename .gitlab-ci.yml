@@ -1,8 +1,5 @@
-stages:
-	- build
-
 build_job:
-	stage: build
-	script:
-		- ls -la
+  stage: build
+  script: "ls -la"
+
 
