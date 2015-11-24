@@ -1,4 +1,5 @@
-before_script: "touch bandwidth.cfg"
+before_script: 
+  - touch bandwidth.cfg
 
 test_job:
   stage: test
