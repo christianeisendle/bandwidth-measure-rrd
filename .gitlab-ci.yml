@@ -1,3 +1,5 @@
+before_script: "touch bandwidth.cfg"
+
 test_job:
   stage: test
   script: "./test.sh"
