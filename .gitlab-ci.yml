@@ -1,5 +1,5 @@
 before_script: 
-  - touch bandwidth.cfg
+  - echo "BW_IPERF_SERVER=1fire.eisendle.net" > bandwidth.cfg
 
 test_job:
   stage: test
