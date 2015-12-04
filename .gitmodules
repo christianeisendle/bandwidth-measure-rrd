@@ -1,0 +1,3 @@
+[submodule "weather"]
+	path = weather
+	url = git@secure.eisendle.net:christian/weather.git
