@@ -20,7 +20,7 @@ iperf3 -s -D
 Alternatively, a public iperf3 server can be used. See <https://iperf.fr/iperf-servers.php>. 
 ## Get the source
 ```
-git clone git@secure.eisendle.net:christian/bandwidth-measure-rrd.git
+https://github.com/christianeisendle/bandwidth-measure-rrd.git
 ````
 
 ## Configuration
