@@ -1,6 +1,6 @@
 #!/bin/bash
-
-export BW_PERIOD_IN_SEC=1
+export BW_SECS_TO_OMIT=1
+export BW_PERIOD_IN_SEC=2
 export TEST=echo
 OUTPUT=`./capture_and_update_db_iperf3.sh`
 echo $OUTPUT
