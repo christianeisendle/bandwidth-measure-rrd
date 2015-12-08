@@ -1,8 +1,0 @@
-before_script: 
-  - echo "BW_IPERF_SERVER=1fire.eisendle.net" > bandwidth.cfg
-
-test_job:
-  stage: test
-  script: "./test.sh"
-
-
