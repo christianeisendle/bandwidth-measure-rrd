@@ -3,7 +3,6 @@
 ## Build status
 
 [![build status](https://secure.eisendle.net/jenkins/project/bandwidth/status.png?ref=master)](https://secure.eisendle.net/jenkins/project/bandwidth?ref=master)
-
 ## Setup
 ### Installation of required components on Debian 8
 ```
