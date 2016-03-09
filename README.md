@@ -21,7 +21,10 @@ Alternatively, a public iperf3 server can be used. See <https://iperf.fr/iperf-s
 ```
 https://github.com/christianeisendle/bandwidth-measure-rrd.git
 ````
-
+## Initialize the rrd database
+```
+./rrd-init.sh
+```
 ## Configuration
 The iperf3 server must be specified using `BW_IPERF_SERVER` variable either by setting it as environment variable or by specifying it in bandwidth.cfg:
 ```
